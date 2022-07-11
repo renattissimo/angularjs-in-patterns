@@ -4,7 +4,7 @@
 
 ## Tabla de Contenidos
 
-* [Traducciones](#translations)
+* [Traducciones](#traducciones)
 * [Resumen](#resumen)
 * [Introducción](#introduccin)
 * [Descripción general de AngularJS](#angular-1-overview)
@@ -41,14 +41,14 @@
 
 <!--endtoc-->
 
-## Translations
+## Traducciones
 
-- [Japanese Translation](https://github.com/mgechev/angular-in-patterns/blob/master/i18n/README-ja-jp.md) by [morizotter](https://twitter.com/morizotter)
+- [Japanese Translation](https://github.com/mgechev/angular-in-patterns/blob/master/i18n/README-ja-jp.md) por [morizotter](https://twitter.com/morizotter)
 - [Russian Translation 1](http://habrahabr.ru/post/250149/)
-- [Russian Translation 2](https://github.com/mgechev/angular-in-patterns/blob/master/i18n/README-ru-ru.md) by [l.s.kramarov](https://github.com/lskramarov)
-- [French Translation](https://github.com/mgechev/angular-in-patterns/blob/master/i18n/README-fr-fr.md) by [manekinekko](https://github.com/manekinekko)
-- [Chinese Translation](https://github.com/mgechev/angular-in-patterns/blob/master/i18n/README-zh-cn.md) by [carlosliu](https://github.com/carlosliu)
-- [Spanish Translation](https://github.com/mgechev/angular-in-patterns/blob/master/i18n/README-es-la.md) by [renattissimo](https://github.com/renattissimo)
+- [Russian Translation 2](https://github.com/mgechev/angular-in-patterns/blob/master/i18n/README-ru-ru.md) por [l.s.kramarov](https://github.com/lskramarov)
+- [French Translation](https://github.com/mgechev/angular-in-patterns/blob/master/i18n/README-fr-fr.md) por [manekinekko](https://github.com/manekinekko)
+- [Chinese Translation](https://github.com/mgechev/angular-in-patterns/blob/master/i18n/README-zh-cn.md) por [carlosliu](https://github.com/carlosliu)
+- [Spanish Translation](https://github.com/mgechev/angular-in-patterns/blob/master/i18n/README-es-la.md) por [renattissimo](https://github.com/renattissimo)
 
 ## Resumen
 
