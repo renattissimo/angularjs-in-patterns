@@ -7,7 +7,7 @@
 * [Traducciones](#traducciones)
 * [Resumen](#resumen)
 * [Introducción](#introduccin)
-* [Descripción general de AngularJS](#angular-1-overview)
+* [Descripción general de AngularJS](#descripcin-general-de-angularjs)
   * [Parciales](#partials)
   * [Controladores](#controllers)
   * [Alcance](#scope)
@@ -62,27 +62,27 @@ El documento comienza con una breve visión general del framework AngularJS. La 
 
 La última sección contiene algunos patrones de arquitectura, que son comúnmente utilizados dentro de la mayoría de las aplicaciones de una sola página construidas con AngularJS.
 
-## AngularJS overview
+## Descripción general de AngularJS
 
-AngularJS is a JavaScript framework developed by Google. It intends to provide a solid base for the development of CRUD Single-Page Applications (SPA).
-SPA is a web application, which once loaded, does not require full page reload when the user performs any actions with it. This means that all application resources (data, templates, scripts, styles) should be loaded with the initial request or better - the information and resources should be loaded on demand.
-Since most of the CRUD applications has common characteristics and requirements, AngularJS intends to provide the optimal set of them out-of-the-box. A few important features of AngularJS are:
+AngularJS es un framework de JavaScript desarrollado por Google. Pretende proporcionar una base sólida para el desarrollo de aplicaciones CRUD de una sola página (SPA).
+SPA es una aplicación web que, una vez cargada, no requiere una recarga completa de la página cuando el usuario realiza alguna acción con ella. Esto significa que todos los recursos de la aplicación (datos, plantillas, scripts, estilos) deben ser cargados con la petición inicial, o aún mejor - la información y los recursos deben ser cargados bajo demanda.
+Dado que la mayoría de las aplicaciones CRUD tienen características y requisitos comunes, AngularJS pretende proporcionar el conjunto óptimo de ellos out-of-the-box. Algunas características importantes de AngularJS son:
 
-- two-way data binding
-- dependency injection
-- separation of concerns
-- testability
-- abstraction
+- vinculación bidireccional de datos (two-way data binding)
+- inyección de dependencias (dependency injection)
+- separación de intereses (separation of concerns)
+- capacidad de ser probado (testability)
+- abstracción (abstraction)
 
-The separation of concerns is achieved by dividing each AngularJS application into separate components, such as:
+La separación de preocupaciones o intereses se logra dividiendo cada aplicación AngularJS en componentes separados, como:
 
-- partials
-- controllers
-- directives
-- services
-- filters
+- parciales (partials)
+- controladores (controllers)
+- directivas (directives)
+- servicios (services)
+- filtros (filters)
 
-These components can be grouped inside different modules, which helps to achieve a higher level of abstraction and handle complexity. Each of the components encapsulates a specific piece of the application's logic.
+Estos componentes pueden agruparse dentro de diferentes módulos, lo que ayuda a conseguir un mayor nivel de abstracción y a manejar la complejidad. Cada uno de los componentes encapsula una parte específica de la lógica de la aplicación.
 
 ### Partials
 
