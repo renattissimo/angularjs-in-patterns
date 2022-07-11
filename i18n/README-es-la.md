@@ -100,8 +100,11 @@ Cada acción subsecuente del usuario requiere sólo la carga de otro parcial o e
  <!-- Etiqueta body aumentada con la directiva ngController  -->
  <body ng-controller="MyController">
     <input ng-model="foo" value="bar">
-    <!-- Etiqueta de botón con directiva ng-click, -->
-    <!-- y expresión de cadena de texto 'buttonText' envuelta en la marca "{{ }}". -->
+    <!-- 
+        Etiqueta de botón con directiva ng-click, 
+        y expresión de cadena de texto 'buttonText' 
+        envuelta en la marca "{{ }}". 
+    -->
     <button ng-click="changeFoo()">{{buttonText}}</button>
     <script src="angular.js"></script>
 </body>
