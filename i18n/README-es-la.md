@@ -8,7 +8,7 @@
 * [Resumen](#resumen)
 * [Introducción](#introduccin)
 * [Descripción general de AngularJS](#descripcin-general-de-angularjs)
-  * [Parciales](#partials)
+  * [Parciales](#parciales-partials)
   * [Controladores](#controllers)
   * [Alcance](#scope)
   * [Directivas](#directives)
@@ -84,29 +84,31 @@ La separación de preocupaciones o intereses se logra dividiendo cada aplicació
 
 Estos componentes pueden agruparse dentro de diferentes módulos, lo que ayuda a conseguir un mayor nivel de abstracción y a manejar la complejidad. Cada uno de los componentes encapsula una parte específica de la lógica de la aplicación.
 
-### Partials
+### Parciales (Partials)
 
-The partials are HTML strings. They may contain AngularJS expressions inside the elements or their attributes. One of the distinctions between AngularJS and the others frameworks is the fact that AngularJS' templates are not in an intermediate format, which needs to be turned into HTML (which is the case with mustache.js and handlebars, for example).
+Los parciales son cadenas de texto HTML. 
+Pueden contener expresiones AngularJS dentro de los elementos o sus atributos. Una de las diferencias entre AngularJS y los demás frameworks es el hecho de que las plantillas de AngularJS no están en un formato intermedio que debe convertirse en HTML (como es el caso de mustache.js y handlebars, por ejemplo).
 
-Initially each SPA loads `index.html` file. In the case of AngularJS this file contains a set of standard and custom HTML attributes, elements and comments, which configure and bootstrap the application. Each sub-sequenced user action requires only load of another partial or change of the state of the application, for example through the data binding provided by the framework.
+Inicialmente cada SPA carga el archivo `index.html`. 
+En el caso de AngularJS este archivo contiene un conjunto de atributos, elementos y comentarios HTML estándar y personalizados, que configuran y arrancan la aplicación. 
+Cada acción subsecuente del usuario requiere sólo la carga de otro parcial o el cambio del estado de la aplicación, por ejemplo a través del enlace de datos proporcionado por el framework.
 
-**Sample partial**
+**Ejemplo de parcial (partial)**
 
 ```HTML
 <html ng-app>
- <!-- Body tag augmented with ngController directive  -->
+ <!-- Etiqueta body aumentada con la directiva ngController  -->
  <body ng-controller="MyController">
-   <input ng-model="foo" value="bar">
-   <!-- Button tag with ng-click directive, and
-          string expression 'buttonText'
-          wrapped in "{{ }}" markup -->
-   <button ng-click="changeFoo()">{{buttonText}}</button>
-   <script src="angular.js"></script>
- </body>
+    <input ng-model="foo" value="bar">
+    <!-- Etiqueta de botón con directiva ng-click, -->
+    <!-- y expresión de cadena de texto 'buttonText' envuelta en la marca "{{ }}". -->
+    <button ng-click="changeFoo()">{{buttonText}}</button>
+    <script src="angular.js"></script>
+</body>
 </html>
 ```
 
-With AngularJS expressions partials define what kind of actions should be performed for handling different user interactions. In the example above the value of the attribute `ng-click` states that the method `changeFoo` of the current *scope* will be invoked.
+Con las expresiones de AngularJS los parciales definen qué tipo de acciones deben realizarse para manejar las diferentes interacciones del usuario. En el ejemplo anterior el valor del atributo `ng-click` establece que se invocará el método `changeFoo` del *ámbito* actual.
 
 ### Controllers
 
