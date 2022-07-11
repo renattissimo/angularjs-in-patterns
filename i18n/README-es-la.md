@@ -1,8 +1,8 @@
-# AngularJS in Patterns
+# Patrones de diseño en AngularJS
 
 <!--toc-->
 
-## Table of Contents
+## Tabla de Contenidos
 
 * [Traducciones](#translations)
 * [Resumen](#resumen)
