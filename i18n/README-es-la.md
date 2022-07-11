@@ -4,39 +4,39 @@
 
 ## Table of Contents
 
-* [Translations](#translations)
-* [Abstract](#abstract)
-* [Introduction](#introduction)
-* [AngularJS overview](#angular-1-overview)
-  * [Partials](#partials)
-  * [Controllers](#controllers)
-  * [Scope](#scope)
-  * [Directives](#directives)
-  * [Filters](#filters)
-  * [Services](#services)
-* [AngularJS Patterns](#angular-1-patterns)
-  * [Services](#services-1)
+* [Traducciones](#translations)
+* [Resumen](#resumen)
+* [Introducción](#introduccin)
+* [Descripción general de AngularJS](#angular-1-overview)
+  * [Parciales](#partials)
+  * [Controladores](#controllers)
+  * [Alcance](#scope)
+  * [Directivas](#directives)
+  * [Filtros](#filters)
+  * [Servicios](#services)
+* [Patrones de AngularJS](#angular-1-patterns)
+  * [Servicios](#services-1)
     * [Singleton](#singleton)
-    * [Factory Method](#factory-method)
+    * [Método de Fábrica (Factory Method)](#factory-method)
     * [Decorator](#decorator)
     * [Facade](#facade)
     * [Proxy](#proxy)
-    * [Active Record](#active-record)
-    * [Intercepting Filters](#intercepting-filters)
-  * [Directives](#directives-1)
-    * [Composite](#composite)
-    * [Interpreter](#interpreter)
-    * [Template View](#template-view)
-  * [Scope](#scope-1)
+    * [Registro Activo (Active Record)](#active-record)
+    * [Filtros Interceptores (Intercepting Filters)](#intercepting-filters)
+  * [Directivas](#directives-1)
+    * [Compuesto (composite)](#composite)
+    * [Intérprete (interpreter)](#interpreter)
+    * [Vista de plantilla (Template View)](#template-view)
+  * [Alcance](#scope-1)
     * [Observer](#observer)
-    * [Chain of Responsibilities](#chain-of-responsibilities)
+    * [Cadena de responsabilidades](#chain-of-responsibilities)
     * [Command](#command)
-  * [Controller](#controller-1)
-    * [Page Controller](#page-controller)
-  * [Others](#others)
+  * [Controlador](#controller-1)
+    * [Controlador de página](#page-controller)
+  * [Otros](#others)
     * [Module Pattern](#module-pattern)
     * [Data Mapper](#data-mapper)
-    * [Observer Pattern as an External Service](#observer-pattern-as-an-external-service)
+    * [Patrón de observador (Observer Pattern) como servicio externo](#observer-pattern-as-an-external-service)
 * [References](#references)
 
 <!--endtoc-->
@@ -50,17 +50,17 @@
 - [Chinese Translation](https://github.com/mgechev/angular-in-patterns/blob/master/i18n/README-zh-cn.md) by [carlosliu](https://github.com/carlosliu)
 - [Spanish Translation](https://github.com/mgechev/angular-in-patterns/blob/master/i18n/README-es-la.md) by [renattissimo](https://github.com/renattissimo)
 
-## Abstract
+## Resumen
 
-One of the best ways to learn something new is to see how the things you already know are used in it.
-This document does not intend to make its readers familiar with the design or architectural patterns; it suggests basic understanding of the concepts of the OOP, design patterns and architectural patterns.
-The goal of this paper is to describe how different software design and architectural patterns are applied in AngularJS or any AngularJS single-page application.
+Una de las mejores maneras de aprender algo nuevo es ver cómo se utilizan en él las cosas que ya sabes.
+Este documento no pretende que sus lectores se familiaricen con los patrones de diseño o arquitectura; sugiere una comprensión básica de los conceptos de la POO (programación orientada a objetos), los patrones de diseño y los patrones de arquitectura.
+El objetivo de este documento es describir cómo se aplican diferentes patrones de diseño y arquitectura de software en AngularJS o en cualquier aplicación de una sola página de AngularJS.
 
-## Introduction
+## Introducción
 
-The document begins with brief overview of the AngularJS framework. The overview explains the main AngularJS components - directives, filters, controllers, services, scope. The second section lists and describes different design and architectural patterns, which are implemented inside the framework. The patterns are grouped by the AngularJS component they are used in. If some patterns are used inside multiple components it will be explicitly mentioned.
+El documento comienza con una breve visión general del framework AngularJS. La visión general explica los principales componentes de AngularJS - directivas, filtros, controladores, servicios, alcance. La segunda sección enumera y describe diferentes patrones de diseño y arquitectura, que se implementan dentro del framework. Los patrones están agrupados por el componente de AngularJS en el que se utilizan. Si algún patrón es utilizado dentro de múltiples componentes se mencionará explícitamente.
 
-The last section contains a few architectural patterns, which are commonly used inside most of the single-page applications built with AngularJS.
+La última sección contiene algunos patrones de arquitectura, que son comúnmente utilizados dentro de la mayoría de las aplicaciones de una sola página construidas con AngularJS.
 
 ## AngularJS overview
 
