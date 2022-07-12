@@ -9,7 +9,7 @@
 * [Introducción](#introduccin)
 * [Descripción general de AngularJS](#descripcin-general-de-angularjs)
   * [Parciales](#parciales-partials)
-  * [Controladores](#controllers)
+  * [Controladores](#controladores)
   * [Alcance](#scope)
   * [Directivas](#directives)
   * [Filtros](#filters)
@@ -113,9 +113,12 @@ Cada acción subsecuente del usuario requiere sólo la carga de otro parcial o e
 
 Con las expresiones de AngularJS los parciales definen qué tipo de acciones deben realizarse para manejar las diferentes interacciones del usuario. En el ejemplo anterior el valor del atributo `ng-click` establece que se invocará el método `changeFoo` del *ámbito* actual.
 
-### Controllers
+### Controladores
 
-The AngularJS controllers are JavaScript functions, which help handling the user interactions with the web application (for example mouse events, keyboard events, etc.), by attaching methods to the *scope*. All required external, for the controllers, components are provided through the Dependency Injection mechanism of AngularJS. The controllers are also responsible for providing the *model* to the partials by attaching data to the *scope*. We can think of this data as *view model*.
+Los controladores de AngularJS son funciones de JavaScript que ayudan a manejar las interacciones del usuario con la aplicación web (por ejemplo, eventos del ratón, eventos del teclado, etc.), adjuntando métodos al *ámbito* (scope). 
+Todos los componentes externos necesarios para los controladores se proporcionan a través del mecanismo de inyección de dependencia de AngularJS. 
+Los controladores también son responsables de proporcionar el *modelo* a los parciales (partial) adjuntando datos al *ámbito*. 
+Podemos pensar en estos datos como *modelo de vista* (view model).
 
 ```JavaScript
 function MyController($scope) {
@@ -129,12 +132,12 @@ function MyController($scope) {
 }
 ```
 
-For example, if we wire the sample controller above with the partial provided in the previous section the user will be able to interact with the application in few different ways.
+Por ejemplo, si conectamos el controlador del ejemplo anterior con el parcial proporcionado en la sección anterior, el usuario podrá interactuar con la aplicación de diferentes maneras.
 
-1. Change the value of `foo` by typing in the input box. This will immediately reflect the value of `foo` because of the two-way data binding.
-2. Change the value of `foo` by clicking the button, which will be labeled `Click me to change foo!`.
+1. Cambia el valor de `foo` escribiendo en el cuadro de entrada. Esto reflejará inmediatamente el valor de `foo` debido a la vinculación de datos de dos vías.
+2. Cambia el valor de `foo` haciendo clic en el botón, que será etiquetado como `Click me to change foo!`.
 
-All the custom elements, attributes, comments or classes could be recognized as AngularJS *directives* if they are previously defined as ones.
+Todos los elementos personalizados, atributos, comentarios o clases podrían ser reconocidos como *directivas* de AngularJS si se definen previamente como tales.
 
 ### Scope
 
