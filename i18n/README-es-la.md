@@ -117,8 +117,8 @@ Con las expresiones de AngularJS los parciales definen qué tipo de acciones deb
 
 Los controladores de AngularJS son funciones de JavaScript que ayudan a manejar las interacciones del usuario con la aplicación web (por ejemplo, eventos del ratón, eventos del teclado, etc.), adjuntando métodos al *ámbito* (scope). 
 Todos los componentes externos necesarios para los controladores se proporcionan a través del mecanismo de inyección de dependencia de AngularJS. 
-Los controladores también son responsables de proporcionar el *modelo* a los parciales (partial) adjuntando datos al *ámbito*. 
-Podemos pensar en estos datos como *modelo de vista* (view model).
+Los controladores también son responsables de proporcionar el *modelo* a los parciales (partials) adjuntando datos al *ámbito (scope)*. 
+Podemos pensar en estos datos como un *modelo de vista* (view model).
 
 ```JavaScript
 function MyController($scope) {
@@ -132,10 +132,10 @@ function MyController($scope) {
 }
 ```
 
-Por ejemplo, si conectamos el controlador del ejemplo anterior con el parcial proporcionado en la sección anterior, el usuario podrá interactuar con la aplicación de diferentes maneras.
+Por ejemplo, si conectamos el controlador del ejemplo anterior con el parcial proporcionado en la sección anterior, el usuario podrá interactuar con la aplicación de diferentes maneras:
 
-1. Cambia el valor de `foo` escribiendo en el cuadro de entrada. Esto reflejará inmediatamente el valor de `foo` debido a la vinculación de datos de dos vías.
-2. Cambia el valor de `foo` haciendo clic en el botón, que será etiquetado como `Click me to change foo!`.
+1. Cambiar el valor de `foo` escribiendo en el cuadro de entrada. Esto reflejará inmediatamente el valor de `foo` debido a la vinculación de datos de dos vías.
+2. Cambiar el valor de `foo` haciendo clic en el botón, que será etiquetado como `Click me to change foo!`.
 
 Todos los elementos personalizados, atributos, comentarios o clases podrían ser reconocidos como *directivas* de AngularJS si se definen previamente como tales.
 
