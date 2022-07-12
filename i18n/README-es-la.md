@@ -10,7 +10,7 @@
 * [Descripción general de AngularJS](#descripcin-general-de-angularjs)
   * [Parciales](#parciales-partials)
   * [Controladores](#controladores)
-  * [Alcance](#scope)
+  * [Ámbito (scope)](#mbito-scope)
   * [Directivas](#directives)
   * [Filtros](#filters)
   * [Servicios](#services)
@@ -139,13 +139,16 @@ Por ejemplo, si conectamos el controlador del ejemplo anterior con el parcial pr
 
 Todos los elementos personalizados, atributos, comentarios o clases podrían ser reconocidos como *directivas* de AngularJS si se definen previamente como tales.
 
-### Scope
+### Ámbito (Scope)
 
-In AngularJS scope is a JavaScript object, which is exposed to the partials. The scope could contain different properties - primitives, objects or methods. All methods attached to the scope could be invoked by evaluation of AngularJS expression inside the partials associated with the given scope or direct call of the method by any component, which keeps reference to the scope. By using appropriate *directives*, the data attached to the scope could be binded to the view in such a way that each change in the partial will reflect a scope property and each change of a scope property will reflect the partial.
+En AngularJS el scope es un objeto de JavaScript, que se expone a los parciales. 
+El scope puede contener diferentes propiedades - primitivas, objetos o métodos. 
+Todos los métodos adjuntos al scope pueden ser invocados mediante la evaluación de la expresión de AngularJS dentro de los parciales asociados con el scope dado o la llamada directa del método por cualquier componente, que mantiene la referencia al scope. 
+Mediante el uso de *directivas* apropiadas, los datos adjuntos al scope pueden ser vinculados a la vista de tal manera que cada cambio en el parcial refleje una propiedad del scope y cada cambio de una propiedad del scope refleje el parcial.
 
-Another important characteristics of the scopes of any AngularJS application is that they are connected into a prototypical chain (except scopes, which are explicitly stated as *isolated*). This way any child scope will be able to invoke methods of its parents since they are properties of its direct or indirect prototype.
+Otra característica importante de los scopes de cualquier aplicación AngularJS es que están conectados en una cadena prototípica (excepto los scopes, que se declaran explícitamente como *aislados* *(isolated)*). De esta manera cualquier scope hijo podrá invocar métodos de sus padres, ya que son propiedades de su prototipo directo o indirecto.
 
-Scope inheritance is illustrated in the following example:
+La herencia del scope se ilustra en el siguiente ejemplo:
 
 ```HTML
 <div ng-controller="BaseCtrl">
@@ -170,7 +173,7 @@ function ChildCtrl($scope) {
 }
 ```
 
-With `div#child` is associated `ChildCtrl` but since the scope injected inside `ChildCtrl` inherits prototypically from its parent scope (i.e. the one injected inside `BaseCtrl`) the method `foo` is accessible by `button#parent-method`.
+Aquí `div#child` está asociado a `ChildCtrl`, pero como el scope inyectado dentro de `ChildCtrl` hereda prototípicamente de su scope padre (es decir, el inyectado dentro de `BaseCtrl`), el método `foo` es accesible por `button#parent-method`.
 
 ### Directives
 
