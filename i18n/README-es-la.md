@@ -218,9 +218,9 @@ Como la intención de este artículo no es explicar la API completa de AngularJS
 
 ### Filtros
 
-The filters in AngularJS are responsible for encapsulating logic required for formatting data. Usually filters are used inside the partials but they are also accessible in the controllers, directives, *services* and other filters through Dependency Injection.
+Los filtros en AngularJS se encargan de encapsular la lógica necesaria para formatear los datos. Normalmente los filtros se utilizan dentro de los parciales pero también son accesibles en los controladores, directivas, *servicios* y otros filtros a través de la Inyección de Dependencias.
 
-Here is a definition of a sample filter, which changes the given string to uppercase:
+Aquí se define un filtro de ejemplo, que cambia la cadena de texto dada a mayúsculas:
 
 ```JavaScript
 myModule.filter('uppercase', function () {
@@ -230,13 +230,13 @@ myModule.filter('uppercase', function () {
 });
 ```
 
-Inside a partial this filter could be used using the Unix's piping syntax:
+Dentro de un parcial, este filtro podría usarse utilizando la sintaxis de canalización de Unix:
 
 ```HTML
 <div>{{ name | uppercase }}</div>
 ```
 
-Inside a controller the filter could be used as follows:
+Dentro de un controlador, el filtro podría utilizarse de la siguiente manera:
 
 ```JavaScript
 function MyCtrl(uppercaseFilter) {
