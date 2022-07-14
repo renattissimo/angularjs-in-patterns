@@ -10,9 +10,9 @@
 * [Descripción general de AngularJS](#descripcin-general-de-angularjs)
   * [Parciales](#parciales-partials)
   * [Controladores](#controladores)
-  * [Ámbito (scope)](#mbito-scope)
-  * [Directivas](#directives)
-  * [Filtros](#filters)
+  * [Ámbito (scope)](#ambito-scope)
+  * [Directivas](#directivas)
+  * [Filtros](#filtros)
   * [Servicios](#services)
 * [Patrones de AngularJS](#angular-1-patterns)
   * [Servicios](#services-1)
@@ -139,7 +139,7 @@ Por ejemplo, si conectamos el controlador del ejemplo anterior con el parcial pr
 
 Todos los elementos personalizados, atributos, comentarios o clases podrían ser reconocidos como *directivas* de AngularJS si se definen previamente como tales.
 
-### Ámbito (Scope)
+### Ambito (Scope)
 
 En AngularJS el scope es un objeto de JavaScript, que se expone a los parciales. 
 El scope puede contener diferentes propiedades - primitivas, objetos o métodos. 
@@ -175,19 +175,19 @@ function ChildCtrl($scope) {
 
 Aquí `div#child` está asociado a `ChildCtrl`, pero como el scope inyectado dentro de `ChildCtrl` hereda prototípicamente de su scope padre (es decir, el inyectado dentro de `BaseCtrl`), el método `foo` es accesible por `button#parent-method`.
 
-### Directives
+### Directivas
 
-In AngularJS the directives are the place where all DOM manipulations should be placed. As a rule of thumb, when you have DOM manipulations in your controller you should create a new directive or consider refactoring of already existing one, which could handle the required DOM manipulations.
-Each directive has a name and logic associated with it. In the simplest case the directive contains only name and definition of *postLink* function, which encapsulates all the logic required for the directive. In more complex cases the directive could contain a lot of properties such as:
+En AngularJS las directivas son el lugar donde se deben colocar todas las manipulaciones del DOM. Como regla general, cuando hay manipulaciones del DOM en tu controlador, debes crear una nueva directiva o considerar la refactorización de una ya existente, que pueda manejar las manipulaciones del DOM requeridas.
+Cada directiva tiene un nombre y una lógica asociada a ella. En el caso más sencillo, la directiva sólo contiene el nombre y la definición de la función *postLink*, que encapsula toda la lógica necesaria para la directiva. En casos más complejos, la directiva puede contener muchas propiedades, como por ejemplo
 
 - template
 - compile function
 - link function
 - etc...
 
-By citing the name of the directives they can be used inside the declarative partials.
+Al citar el nombre de las directivas, éstas se pueden utilizar dentro de los parciales declarativos.
 
-Example:
+Ejemplo:
 
 ```JavaScript
 myModule.directive('alertButton', function () {
@@ -212,11 +212,11 @@ myModule.directive('alertButton', function () {
 <alert-button content="42">Click me</alert-button>
 ```
 
-In the example above the tag `<alert-button></alert-button>` will be replaced button element. When the user clicks on the button the string `42` will be alerted.
+En el ejemplo anterior, la etiqueta `<alert-button></alert-button>` será reemplazada por el elemento `<button>`. Cuando el usuario haga clic en el botón, la cadena `42` será alertada.
 
-Since the intent of this paper is not to explain the complete API of AngularJS, we will stop with the directives here.
+Como la intención de este artículo no es explicar la API completa de AngularJS, nos detendremos aquí en cuanto a las directivas se refiere.
 
-### Filters
+### Filtros
 
 The filters in AngularJS are responsible for encapsulating logic required for formatting data. Usually filters are used inside the partials but they are also accessible in the controllers, directives, *services* and other filters through Dependency Injection.
 
