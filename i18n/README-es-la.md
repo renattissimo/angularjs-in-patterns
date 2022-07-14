@@ -13,7 +13,7 @@
   * [Ámbito (scope)](#ambito-scope)
   * [Directivas](#directivas)
   * [Filtros](#filtros)
-  * [Servicios](#services)
+  * [Servicios](#servicios)
 * [Patrones de AngularJS](#angular-1-patterns)
   * [Servicios](#services-1)
     * [Singleton](#singleton)
@@ -244,9 +244,9 @@ function MyCtrl(uppercaseFilter) {
 }
 ```
 
-### Services
+### Servicios
 
-Every piece of logic, which doesn't belong to the components described above, should be placed inside a service. Usually services encapsulate the domain specific logic, persistence logic, XHR, WebSockets, etc. When the controllers in the application became too "fat" the repetitive code should be placed inside a service.
+Cada pieza de lógica, que no pertenece a los componentes descritos anteriormente, debe ser colocada dentro de un servicio. Normalmente los servicios encapsulan la lógica específica del dominio, la lógica de persistencia, XHR, WebSockets, etc. Cuando los controladores de la aplicación se vuelven demasiado " pesados ", el código repetitivo debe ser colocado dentro de un servicio.
 
 ```JavaScript
 myModule.service('Developer', function () {
@@ -260,7 +260,7 @@ myModule.service('Developer', function () {
 });
 ```
 
-The service could be injected inside any component, which supports dependency injection (controllers, other services, filters, directives).
+El servicio puede ser inyectado dentro de cualquier componente que soporte la inyección de dependencias (controladores, otros servicios, filtros, directivas).
 
 ```JavaScript
 function MyCtrl(Developer) {
