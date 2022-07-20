@@ -15,7 +15,7 @@
   * [Filtros](#filtros)
   * [Servicios](#servicios)
 * [Patrones de AngularJS](#patrones-angularjs)
-  * [Servicios](#services-1)
+  * [Servicios](#servicios-1)
     * [Singleton](#singleton)
     * [Método de Fábrica (Factory Method)](#factory-method)
     * [Decorator](#decorator)
@@ -275,7 +275,7 @@ En el siguiente par de secciones, vamos a echar un vistazo a cómo integrar el d
 
 En el último capítulo vamos a echar un vistazo a algunos patrones de arquitectura, que se utilizan con frecuencia en el desarrollo de aplicaciones de una sola página con AngularJS (pero no limitado a).
 
-### Services
+### Servicios
 
 #### Singleton
 
