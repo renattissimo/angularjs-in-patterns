@@ -14,7 +14,7 @@
   * [Directivas](#directivas)
   * [Filtros](#filtros)
   * [Servicios](#servicios)
-* [Patrones de AngularJS](#angular-1-patterns)
+* [Patrones de AngularJS](#patrones-angularjs)
   * [Servicios](#services-1)
     * [Singleton](#singleton)
     * [Método de Fábrica (Factory Method)](#factory-method)
@@ -269,11 +269,11 @@ function MyCtrl(Developer) {
 }
 ```
 
-## AngularJS Patterns
+## Patrones AngularJS
 
-In the next a couple of sections, we are going to take a look how the traditional design and architectural patterns are composed in the AngularJS components.
+En el siguiente par de secciones, vamos a echar un vistazo a cómo integrar el diseño tradicional y los patrones de arquitectura en los componentes de AngularJS.
 
-In the last chapter we are going to take a look at some architectural patterns, which are frequently used in the development of Single-Page Applications with (but not limited to) AngularJS.
+En el último capítulo vamos a echar un vistazo a algunos patrones de arquitectura, que se utilizan con frecuencia en el desarrollo de aplicaciones de una sola página con AngularJS (pero no limitado a).
 
 ### Services
 
